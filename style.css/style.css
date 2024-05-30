@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "SundayMilk";
+    src:url('./SundayMilk.ttf')
+}
+@font-face {
+    font-family: "LEMONMILKmedi";
+    src: url('./LEMONMILK-Medium.otf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color-bleu: #43766C;
+    --color-blanc: #F8FAE5;
+    --color-maron: #ca9a60;
+    --color-foncé: #76453B;
+}
+body {
+    font-family: 'LEMONMILKmedi', sans-serif;
+}
+
+
+#header-haut {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blanc);
+    /* color: #FFFFFF; */
+    color: var(--color-foncé);
+    margin: 0px;
+    padding: 20px;
+    width: 100vw;
+    height: 10vw;
+}
+
+#header-logo {
+    width: 25vw;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-titre {
+    color : var(--color-foncé);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#header-login {
+    width: 25vw;
+    border: var(--color-foncé) groove 3px;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgb(94, 82, 82);
+    font-family: 'SundayMilk',sans-serif;
+}
+
+#logo {
+    /*width: 25vw;*/
+    height: 16vh;
+}
+/* bare sous le header avec imagede fond */
+
+#header-bas{
+    width: 100vw;
+    height: 15vh;
+    background-image: url('../assets/LibrairieBreson.jpg');
+}
+
+input, label {
+    display: block;
+    margin-top: 3px;
+    width: 100%;
+
+}
+/* partie centrale */
+#central {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+/* menu */
+nav{
+    width: 20vw;
+    height: 60vh;
+    background-color: var(--color-maron);
+    border-radius: 0 0 15 15;
+    box-shadow: var(--color-foncé) 2px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.bouton{
+        text-decoration: none;
+        color: var(--color-bleu);
+        text-align: center;
+        font-weight: 800;
+        font-size: 1.2rem;
+        display: block;
+        padding: 20px;
+        background-color: var(--color-blanc);
+        width: 80%;
+        border-radius: 20px;
+        box-shadow: var(--color-foncé) 2px 2px 5px 3px;
+        transition: box-shadow 300ms, color 1000ms;
+}
+.bouton:hover {
+    box-shadow: none;
+}
+
+/* le choix de site */
